@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Air Pollution Monitoring With Mobile Robots | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Air Pollution Monitoring With Mobile Robots" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry!" />
+<meta property="og:description" content="In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry!" />
+<link rel="canonical" href="https://niphiwi.github.io/blog/2021/01/30/Air-Pollution-Monitoring-with-Mobile-Robots.html" />
+<meta property="og:url" content="https://niphiwi.github.io/blog/2021/01/30/Air-Pollution-Monitoring-with-Mobile-Robots.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-30T00:00:00-06:00" />
+<script type="application/ld+json">
+{"url":"https://niphiwi.github.io/blog/2021/01/30/Air-Pollution-Monitoring-with-Mobile-Robots.html","@type":"BlogPosting","headline":"Air Pollution Monitoring With Mobile Robots","dateModified":"2021-01-30T00:00:00-06:00","datePublished":"2021-01-30T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://niphiwi.github.io/blog/2021/01/30/Air-Pollution-Monitoring-with-Mobile-Robots.html"},"description":"In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry!","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://niphiwi.github.io/blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Air Pollution Monitoring With Mobile Robots</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-30T00:00:00-06:00" itemprop="datePublished">
+        Jan 30, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry!</p>
+
+<h2 id="air-pollution-affects-us-all">Air Pollution Affects Us All</h2>
+
+<p>Thanks to our major car manufacturers and <em>Dieselgate</em>, we all know that air pollution is a major risk. In fact, more than 400,000 premature deaths are linked to air pollution – and that’s only in the European Union! According to the WHO, more than seven million people worldwide are killed by polluted air. Nine out of ten people breathe air that exceeds the WHO’s guidelines. This means that diesel cars are only a small part of the problem. Air pollution has to be tackled in many different areas and I will focus on the area of occupational health. Especially industry workers – hello, dad! – are exposed to toxic gases and dust particles that are harmful to the human body.</p>
+
+<p>For the sake of simplification, let’s imagine a steel factory:</p>
+
+<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image1.png" alt="" /></p>
+
+<p>Here we see some workers and also an area of polluted air. Polluted air may consist of dust particles or gases that emerge during industrial processes in the factory. To minimize the impact of air pollution on our workers, we have to reduce the concentration of toxic particles (e.g., by adapting the factory’s ventilation system) or at a minimum reduce the time our workers are exposed to these hazardous spots. The latter would be particularly easy in the example above.</p>
+
+<h2 id="approaches-for-environmental-monitoring">Approaches for Environmental Monitoring</h2>
+
+<p>In reality, however, we have the problem that we don’t really know where these highly polluted areas actually are. Since airborne particles are distributed by underlying physical processes (e.g., advection and diffusion), predicting the distribution of air pollutants is no trivial task. Health experts who try to estimate the health risks for workers can typically only take measurements at one location each time. During their measurement campaign, they may cover different locations, but in the end, they have information of varying recency – and for many areas, they don’t have any measurements at all. On top of that, a human health expert cannot monitor the factory 24/7. Typically, the exposition of a worker is estimated based on single-day campaigns. Seasonal effects like weekends or intermediate increased production volume can only partly be taken into account. The takeaway is: Even with expert knowledge it is not always possible to get a precise understanding of the spatial and temporal distribution of air pollutants.</p>
+
+<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image2.png" alt="" /></p>
+
+<p>What’s the best approach to get a precise understanding of the distribution of air pollutants in a given area? The boring, scientific answer is: we don’t know. But we have some ideas. Our idea is a combinatory system that consists out of stationary sensors and mobile robots. The system is coined RASEM (Robot-assisted Environmental Monitoring for Air Quality Assessment in Industrial Scenarios) after the same-named European funded research project [2]. Below we see an illustration of the system.</p>
+
+<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image3.png" alt="" /></p>
+
+<p>The hardware system consists of the following two pillars:</p>
+
+<h4 id="stationary-sensing-nodes"><strong>Stationary sensing nodes</strong></h4>
+
+<p>Multiple stationary sensing nodes form a wireless sensor network. A single sensing node consists of sensors for temperature, humidity, dust, and gas. Here, we are using very low-cost sensors to achieve unit costs below 300 € per node. This enables us the continuous monitoring of environmental parameters at different locations. The more nodes we set up, the better is our rough understanding of the overall concentration levels.</p>
+
+<h4 id="mobile-units"><strong>Mobile units</strong></h4>
+
+<p>We are using ground and aerial robots that are equipped with high-quality sensors. With the robots, we can collect data in areas that are not covered by the stationary sensors. We can also cross-calibrate the low-cost sensors with the high-quality sensors.</p>
+
+<h2 id="reducing-health-risks-by-making-sense-out-of-data">Reducing Health Risks by Making Sense out of Data</h2>
+
+<p>Getting the data is only one part of the process. The end result should be to minimize the health risks for humans by developing effective mitigation measures. To enable this, we aim to develop algorithms that create 3D distribution maps of air pollutants. These maps shall visualize, how specific air pollutants are distributed in the factory overtime.</p>
+
+<p>Of course, this is already an active research field and different approaches for this problem exist. So-called <em>Gaussian processes</em> are widely used to represent the distribution of pollutants. Researchers have proven that mobile robots, stationary sensor networks, or the combination of both yield good results for this task. Recent research also tries to leverage advances in the field of machine learning.</p>
+
+<p>With our RASEM system, we aim to develop novel algorithms to predict the distribution of du and gases at unknown locations. One potential that comes into mind is the incorporation of additional information into a model. Most models are primarily data-driven, which means their prediction is mainly based on the immediate input data. Whenever we humans perform predictions, we make heavy use of our <em>intuition</em>. We just <em>know</em> that we can’t move through walls, because we learned this the hard way a long time ago (an except maybe if you’re delivered a Hogwarts acceptance letter by owl post around your eleventh birthday, but then you’re out of the scope of this blog). Likewise, the performance of a model could be improved significantly, if an intuition on the relevant physics is incorporated into it. Better predictions of the distribution of air pollutants could be made by inputting not only sensor measurements, but also information on industrial processes (e.g., how often and how long a specific industrial process occurs) or the environment (e.g., how the factory looks like and which areas are used for what). <img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image4.png" alt="" /></p>
+
+<p>In the upcoming year, we are going to evaluate the proposed system under real conditions at industrial sites in Finland. As the project is a cooperation of diverse research institutes and industrial partners allows us, we aim to generate new knowledge that can eventually contribute a small part to the global risk of air pollution.</p>
+
+<p>[1] NP Winkler, PP Neumann, A Säämänen, E Schaffernicht, AJ Lilienthal: High-quality meets low-cost: Approaches for hybrid-mobility sensor networks, Materials Today: Proceedings, Volume 32, Part 2, 2020, Pages 250-253, DOI: <a href="https://doi.org/10.1016/j.matpr.2020.05.799">https://doi.org/10.1016/j.matpr.2020.05.799</a>.</p>
+
+<p>[2] <a href="https://projects.safera.eu/project/20">https://projects.safera.eu/project/20</a></p>
+
+  </div><a class="u-url" href="/blog/2021/01/30/Air-Pollution-Monitoring-with-Mobile-Robots.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
