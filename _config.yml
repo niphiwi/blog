@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: only pasta in my mind
-description: I like pasta and I blog about the thoughts I cannot cover with olive oil.
+description: 
 github_username: niphiwi
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
