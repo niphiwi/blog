@@ -6,13 +6,13 @@ thumbnail: "images/system.png"
 ---
 
 _In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry! ;-)_
-![RASEM system](images/system.png)
+![]({{ site.baseurl }}/images/paper/system.png)
 
 ## Air Pollution Affects Us All
 Thanks to our major car manufacturers and _Dieselgate_, we all know that air pollution is a major risk. In fact, more than 400,000 premature deaths are linked to air pollution – and that’s only in the European Union! According to the WHO, more than seven million people worldwide are killed by polluted air. Nine out of ten people breathe air that exceeds the WHO’s guidelines. This means that diesel cars are only a small part of the problem. Air pollution has to be tackled in many different areas and I will focus on the area of occupational health. Especially industry workers – hello, dad! – are exposed to toxic gases and dust particles that are harmful to the human body.
 
 For the sake of simplification, let’s imagine a steel factory:
-![steel factory](images/factory-workers.png)
+![]({{ site.baseurl }}/images/paper/factory-workers.png)
 
 Here we see some workers and also an area of polluted air. Polluted air may consist of dust particles or gases that emerge during industrial processes in the factory. To minimize the impact of air pollution on our workers, we have to reduce the concentration of toxic particles (e.g., by adapting the factory’s ventilation system) or at a minimum reduce the time our workers are exposed to these hazardous spots. The latter would be particularly easy in the example above.
 ## Approaches for Environmental Monitoring
@@ -30,7 +30,7 @@ Of course, this is already an active research field and different approaches for
 
 With our RASEM system, we aim to develop novel algorithms to predict the distribution of dust and gases at unknown locations. One potential that comes into mind is the incorporation of additional information into a model. Most models are primarily data-driven, which means their prediction is mainly based on the immediate input data. In contrast, whenever we humans perform predictions, we make heavy use of our _intuition_. We just _know_ that we can’t move through walls, because we learned this the hard way a long time ago (an except maybe if you’re delivered a Hogwarts acceptance letter by owl post around your eleventh birthday, but then you’re out of the scope of this blog). Likewise, the performance of a model could be improved significantly, if an intuition on the relevant physics is incorporated into it. Better predictions of the distribution of air pollutants could be made by inputting not only sensor measurements, but also information on industrial processes (e.g., how often and how long a specific industrial process occurs) or the environment (e.g., how the factory looks like and which areas are used for what).
 
-![steel factory with RASEM](images/factory-system.png)
+![]({{ site.baseurl }}/images/paper/factory-system.png)
 
 In the upcoming year, we are going to evaluate the proposed system under real conditions at industrial sites in Finland. With our project, which is a cooperation of diverse research institutes and industrial partners, we aim to generate new knowledge that can eventually contribute a small part to the global risk of air pollution.
 
