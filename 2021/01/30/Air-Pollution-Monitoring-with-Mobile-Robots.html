@@ -88,13 +88,15 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p><em>In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry! ;-)</em></p>
 
+<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image1.png" alt="" /></p>
+
 <h2 id="air-pollution-affects-us-all">Air Pollution Affects Us All</h2>
 
 <p>Thanks to our major car manufacturers and <em>Dieselgate</em>, we all know that air pollution is a major risk. In fact, more than 400,000 premature deaths are linked to air pollution – and that’s only in the European Union! According to the WHO, more than seven million people worldwide are killed by polluted air. Nine out of ten people breathe air that exceeds the WHO’s guidelines. This means that diesel cars are only a small part of the problem. Air pollution has to be tackled in many different areas and I will focus on the area of occupational health. Especially industry workers – hello, dad! – are exposed to toxic gases and dust particles that are harmful to the human body.</p>
 
 <p>For the sake of simplification, let’s imagine a steel factory:</p>
 
-<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image1.png" alt="" /></p>
+<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image2.png" alt="" /></p>
 
 <p>Here we see some workers and also an area of polluted air. Polluted air may consist of dust particles or gases that emerge during industrial processes in the factory. To minimize the impact of air pollution on our workers, we have to reduce the concentration of toxic particles (e.g., by adapting the factory’s ventilation system) or at a minimum reduce the time our workers are exposed to these hazardous spots. The latter would be particularly easy in the example above.</p>
 
@@ -102,13 +104,9 @@ window.onload = wrap_img;
 
 <p>In reality, however, we have the problem that we don’t really know where these highly polluted areas actually are. Since airborne particles are distributed by underlying physical processes (e.g., advection and diffusion), predicting the distribution of air pollutants is no trivial task. Health experts who try to estimate the health risks for workers can typically only take measurements at one location each time. During their measurement campaign, they may cover different locations, but in the end, they have information of varying recency – and for many areas, they don’t have any measurements at all. On top of that, a human health expert cannot monitor the factory 24/7. Typically, the exposition of a worker is estimated based on single-day campaigns. Seasonal effects like weekends or intermediate increased production volume can only partly be taken into account. The takeaway is: Even with expert knowledge it is not always possible to get a precise understanding of the spatial and temporal distribution of air pollutants.</p>
 
-<p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image2.png" alt="" /></p>
-
-<p>What’s the best approach to get a precise understanding of the distribution of air pollutants in a given area? The boring, scientific answer is: we don’t know. But we have some ideas. Our idea is a combinatory system that consists out of stationary sensors and mobile robots. The system is coined RASEM (Robot-assisted Environmental Monitoring for Air Quality Assessment in Industrial Scenarios) after the same-named European funded research project [2]. Below we see an illustration of the system.</p>
-
 <p><img src="https://niphiwi.github.io/blog/assets/img/2021-01-30-Air-Pollution-Monitoring-with-Mobile-Robots/media/image3.png" alt="" /></p>
 
-<p>The hardware system consists of the following two pillars:</p>
+<p>What’s the best approach to get a precise understanding of the distribution of air pollutants in a given area? The boring, scientific answer is: we don’t know. But we have some ideas. Our idea is a combinatory system that consists out of stationary sensors and mobile robots. The system is coined RASEM (Robot-assisted Environmental Monitoring for Air Quality Assessment in Industrial Scenarios) after the same-named European funded research project [2]. The hardware system consists of the following two pillars:</p>
 
 <h4 id="stationary-sensing-nodes"><strong>Stationary sensing nodes</strong></h4>
 
