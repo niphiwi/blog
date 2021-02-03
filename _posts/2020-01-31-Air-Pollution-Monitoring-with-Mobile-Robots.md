@@ -5,7 +5,7 @@ toc: false
 image: "images/paper/system.png"
 ---
 
-_In this very first post of my blog, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry! ;-)_
+_Here, I want to briefly present some ideas from my first research paper [1]. My intention is that even my blue-collar parents would get a basic understanding of the research topic, even though they’d have to rely on DeepL.com for translation – sorry! ;-)_
 
 ![]({{ site.baseurl }}/images/paper/system.png)
 
